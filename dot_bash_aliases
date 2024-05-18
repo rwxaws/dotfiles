@@ -1,0 +1,28 @@
+# aliases
+alias v="nvim"
+alias hx="helix"
+alias n="nnn"
+alias q="qalc -c"
+alias t="tmux"
+alias pacup="sudo pacman -Syu"
+alias pacs="pacman -Ss"
+alias paci="sudo pacman -S"
+alias pacr="sudo pacman -Rns"
+alias yayup="yay -Syu"
+alias yayr="yay -Rnsc"
+
+# redshift
+alias r_on="redshift -O 3000"
+alias r_off="redshift -x"
+
+# network
+alias sshfs_mount="sshfs root@192.168.0.100:/mnt/dietpi_userdata $HOME/remote"
+alias sshfs_umount="umount $HOME/remote"
+alias ssh_aws="ssh root@192.168.0.100"
+alias g="ping 8.8.8.8"
+alias gg="gping google.com"
+alias nreset="nmcli radio wifi off & sleep 5 && nmcli radio wifi on"
+alias noff="nmcli radio wifi off"
+alias non="nmcli radio wifi on"
+alias wconnectivity="watch nmcli n connectivity"
+
