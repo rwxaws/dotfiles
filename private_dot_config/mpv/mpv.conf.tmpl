@@ -5,5 +5,9 @@ save-position-on-quit
 
 ytdl-format="bestvideo[height<=?720]+bestaudio/best"
 
-# bigger cache
+# set cache
+{{- if eq .chezmoi.hostname "aws-thinkpad" }}
+demuxer-max-bytes=256MiB
+{{- else }}
 demuxer-max-bytes=2GiB
+{{- end -}}
