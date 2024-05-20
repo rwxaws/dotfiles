@@ -2,10 +2,10 @@ local default_opts = { silent = true, noremap = true }
 
 -- leader key --
 vim.g.mapleader = " "
+vim.keymap.set({"n", "x"}, "<leader><leader>", ":", {noremap=true})
 
 local keymaps = {
   -- command mode
-	{ mode = {"n", "x"}, lhs = "<leader><leader>", rhs = ":", desc = "command mode"},
 
 	-- buffers
 	{ mode = "n", lhs = "<S-l>", rhs = "<cmd>bn<cr>", desc = "next buffer"},
