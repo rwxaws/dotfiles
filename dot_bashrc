@@ -77,7 +77,7 @@ source /usr/share/fzf/completion.bash
 
 # Source user-defined functions & aliases
 if [ -d "$HOME/.bashrc.d" ]; then
-  for rc in "$HOME/.bashrc.d/*"; do
+  for rc in "$HOME/.bashrc.d/"*; do
     if [ -f "$rc" ]; then
       . "$rc"
     fi
