@@ -6,7 +6,7 @@ local function search_dotfiles()
   builtin.find_files({
     hidden = true,
     find_command = {"fd", "-t", "f", "--hidden", "-E", "*.{jpg,png}"},
-    cwd="$HOME/dotfiles",
+    cwd="$HOME/.local/share/chezmoi",
     file_ignore_patterns = { ".git/" },
   })
 end
