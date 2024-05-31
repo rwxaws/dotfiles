@@ -2,7 +2,7 @@
 alias v="nvim"
 alias n="nnn"
 alias q="qalc -c"
-alias t="tmux"
+alias icat="kitty +kitten icat"
 alias pacup="sudo pacman -Syu"
 alias pacs="pacman -Ss"
 alias paci="sudo pacman -S"
