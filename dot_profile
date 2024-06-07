@@ -12,4 +12,4 @@ export MY_TERM="xterm"
 export BAT_THEME="gruvbox"
 
 # PATH
-export PATH="$PATH:$HOME/scripts:$HOME/go/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/go/bin:$HOME/.local/gems"

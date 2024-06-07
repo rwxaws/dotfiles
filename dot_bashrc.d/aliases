@@ -2,7 +2,6 @@
 alias v="nvim"
 alias n="nnn"
 alias q="qalc -c"
-alias icat="kitty +kitten icat"
 alias pacup="sudo pacman -Syu"
 alias pacs="pacman -Ss"
 alias paci="sudo pacman -S"
@@ -10,8 +9,12 @@ alias pacr="sudo pacman -Rns"
 alias yayup="yay -Syu"
 alias yayr="yay -Rnsc"
 
+# kitty
+alias s="kitten ssh aws-server"
+alias icat="kitten icat"
+
 # redshift
-alias r_on="redshift -O 3000"
+alias r_on="redshift -O 2500"
 alias r_off="redshift -x"
 
 # network
