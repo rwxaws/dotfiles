@@ -69,11 +69,6 @@ shopt -s histappend
 # Enable vi mode
 set -o vi
 
-# Source completion files
-source /usr/share/fzf/key-bindings.bash
-source /usr/share/fzf/completion.bash
-source /usr/share/fzf/key-bindings.bash
-source /usr/share/fzf/completion.bash
 
 # Source user-defined functions & aliases
 if [ -d "$HOME/.bashrc.d" ]; then
@@ -84,5 +79,3 @@ if [ -d "$HOME/.bashrc.d" ]; then
   done
 fi
 unset rc
-
-eval "$(starship init bash)"
