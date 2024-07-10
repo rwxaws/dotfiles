@@ -1,6 +1,7 @@
 # aliases
 alias v="nvim"
 alias n="nnn"
+alias ncdu="ncdu --color dark-bg"
 alias q="qalc -c"
 alias pacup="sudo pacman -Syu"
 alias pacs="pacman -Ss"
