@@ -1,0 +1,46 @@
+set $mod Mod4
+
+include startup.conf
+include keyboard_shortcuts.conf
+include misc.conf
+
+# hide borders
+hide_edge_borders both
+
+font pango:Noto Sans 11
+
+# mouse focus
+focus_follows_mouse no
+
+floating_modifier $mod
+tiling_drag modifier titlebar
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+bar {
+        status_command i3status
+}
