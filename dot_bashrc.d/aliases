@@ -3,12 +3,6 @@ alias v="nvim"
 alias n="nnn"
 alias ncdu="ncdu --color dark-bg"
 alias q="qalc -c"
-alias pacup="sudo pacman -Syu"
-alias pacs="pacman -Ss"
-alias paci="sudo pacman -S"
-alias pacr="sudo pacman -Rns"
-alias yayup="yay -Syu"
-alias yayr="yay -Rnsc"
 
 # kitty
 alias s="kitten ssh aws-server"
