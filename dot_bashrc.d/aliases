@@ -5,7 +5,8 @@ alias ncdu="ncdu --color dark-bg"
 alias q="qalc -c"
 
 # kitty
-alias s="kitten ssh aws-server"
+alias s="kitten ssh"
+alias ss="kitten ssh aws-server"
 alias icat="kitten icat"
 
 # redshift
