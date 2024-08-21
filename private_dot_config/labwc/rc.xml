@@ -69,28 +69,28 @@
       <action name="iconify" />
     </keybind>
 
-    <keybind key="W-S-l">
+    <keybind key="W-l">
       <action name="SnapToEdge" direction="right" />
     </keybind>
 
-    <keybind key="W-S-h">
+    <keybind key="W-h">
       <action name="SnapToEdge" direction="left" />
     </keybind>
 
-    <keybind key="W-l">
-      <action name="GoToDesktop" to="right" wrap="no" />
-    </keybind>
-
-    <keybind key="W-h">
+    <keybind key="W-1">
       <action name="GoToDesktop" to="left" wrap="no" />
     </keybind>
 
-    <keybind key="W-S-k">
-      <action name="SendToDesktop" to="right" />
+    <keybind key="W-2">
+      <action name="GoToDesktop" to="right" wrap="no" />
     </keybind>
 
-    <keybind key="W-S-j">
+    <keybind key="W-S-1">
       <action name="SendToDesktop" to="left" />
+    </keybind>
+
+    <keybind key="W-S-2">
+      <action name="SendToDesktop" to="right" />
     </keybind>
 
     <keybind key="W-f">
