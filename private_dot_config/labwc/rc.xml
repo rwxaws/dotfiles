@@ -28,11 +28,11 @@
     </keybind>
 
     <keybind key="W-0">
-      <action name="Execute" command="brightnessctl set +5" />
+      <action name="Execute" command="brightnessctl set +5%" />
     </keybind>
 
     <keybind key="W-9">
-      <action name="Execute" command="brightnessctl set -5" />
+      <action name="Execute" command="brightnessctl set 5%-" />
     </keybind>
 
     <keybind key="W-2">
