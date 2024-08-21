@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<labwc_config>
+
+  <theme>
+    <name></name>
+    <cornerRadius>8</cornerRadius>
+    <font name="sans" size="10" />
+  </theme>
+
+  <keyboard>
+    <default />
+    
+    <keybind key="W-Return">
+      <action name="Execute" command="kitty" />
+    </keybind>
+
+    <keybind key="W-p">
+      <action name="Execute" command="pcmanfm" />
+    </keybind>
+
+    <keybind key="W-[">
+      <action name="Execute" command="gammastep -PO 2500" />
+    </keybind>
+
+    <keybind key="W-]">
+      <action name="Execute" command="pkill gammastep" />
+    </keybind>
+
+    <keybind key="W-0">
+      <action name="Execute" command="brightnessctl set +5" />
+    </keybind>
+
+    <keybind key="W-9">
+      <action name="Execute" command="brightnessctl set -5" />
+    </keybind>
+
+    <keybind key="W-2">
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ +5%" />
+    </keybind>
+
+    <keybind key="W-1">
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ -5%" />
+    </keybind>
+
+    <keybind key="W-r">
+      <action name="Execute" command="bemenu-run -l 10 --binding vim" />
+    </keybind>
+
+    <keybind key="W-S-r">
+      <action name="Reconfigure" />
+    </keybind>
+
+    <keybind key="W-up">
+      <action name="maximize" />
+    </keybind>
+
+    <keybind key="W-down">
+      <action name="iconify" />
+    </keybind>
+
+    <keybind key="W-f">
+      <action name="ToggleFullscreen" />
+    </keybind>
+
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="some-custom-menu" />
+      </mousebind>
+    </context>
+  </mouse>
+
+</labwc_config>
