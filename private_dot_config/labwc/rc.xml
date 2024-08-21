@@ -6,13 +6,23 @@
     <name></name>
     <cornerRadius>8</cornerRadius>
     <font name="sans" size="10" />
+    <keepBorder>no</keepBorder>
   </theme>
+
+  <desktops number="2" popupTime="500" prefix="ws" />
 
   <keyboard>
     <default />
+
+    <repeatRate>100</repeatRate>
+    <repeatDelay>200</repeatDelay>
     
     <keybind key="W-Return">
       <action name="Execute" command="kitty" />
+    </keybind>
+
+    <keybind key="W-q">
+      <action name="Close" />
     </keybind>
 
     <keybind key="W-p">
@@ -20,26 +30,26 @@
     </keybind>
 
     <keybind key="W-[">
-      <action name="Execute" command="gammastep -PO 2500" />
+      <action name="Execute" command="gammastep -PO 3000" />
     </keybind>
 
     <keybind key="W-]">
       <action name="Execute" command="pkill gammastep" />
     </keybind>
 
-    <keybind key="W-0">
+    <keybind key="W-up">
       <action name="Execute" command="brightnessctl set +5%" />
     </keybind>
 
-    <keybind key="W-9">
+    <keybind key="W-down">
       <action name="Execute" command="brightnessctl set 5%-" />
     </keybind>
 
-    <keybind key="W-2">
+    <keybind key="W-right">
       <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ +5%" />
     </keybind>
 
-    <keybind key="W-1">
+    <keybind key="W-left">
       <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ -5%" />
     </keybind>
 
@@ -51,12 +61,36 @@
       <action name="Reconfigure" />
     </keybind>
 
-    <keybind key="W-up">
-      <action name="maximize" />
+    <keybind key="W-k">
+      <action name="ToggleMaximize" />
     </keybind>
 
-    <keybind key="W-down">
+    <keybind key="W-j">
       <action name="iconify" />
+    </keybind>
+
+    <keybind key="W-S-l">
+      <action name="SnapToEdge" direction="right" />
+    </keybind>
+
+    <keybind key="W-S-h">
+      <action name="SnapToEdge" direction="left" />
+    </keybind>
+
+    <keybind key="W-l">
+      <action name="GoToDesktop" to="right" />
+    </keybind>
+
+    <keybind key="W-h">
+      <action name="GoToDesktop" to="left" />
+    </keybind>
+
+    <keybind key="W-S-k">
+      <action name="SendToDesktop" to="right" />
+    </keybind>
+
+    <keybind key="W-S-j">
+      <action name="SendToDesktop" to="left" />
     </keybind>
 
     <keybind key="W-f">
@@ -67,12 +101,6 @@
 
   <mouse>
     <default />
-    <!-- Show a custom menu on desktop right click -->
-    <context name="Root">
-      <mousebind button="Right" action="Press">
-        <action name="ShowMenu" menu="some-custom-menu" />
-      </mousebind>
-    </context>
   </mouse>
 
 </labwc_config>
