@@ -78,11 +78,11 @@
     </keybind>
 
     <keybind key="W-l">
-      <action name="GoToDesktop" to="right" />
+      <action name="GoToDesktop" to="right" wrap="no" />
     </keybind>
 
     <keybind key="W-h">
-      <action name="GoToDesktop" to="left" />
+      <action name="GoToDesktop" to="left" wrap="no" />
     </keybind>
 
     <keybind key="W-S-k">
