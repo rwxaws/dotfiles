@@ -3,7 +3,7 @@
 <labwc_config>
 
   <theme>
-    <name></name>
+    <name>Arc-Clone</name>
     <cornerRadius>8</cornerRadius>
     <font name="sans" size="10" />
     <keepBorder>no</keepBorder>
@@ -18,7 +18,7 @@
     <repeatDelay>200</repeatDelay>
     
     <keybind key="W-Return">
-      <action name="Execute" command="kitty" />
+      <action name="Execute" command="footclient" />
     </keybind>
 
     <keybind key="W-q">
@@ -54,7 +54,7 @@
     </keybind>
 
     <keybind key="W-r">
-      <action name="Execute" command="bemenu-run -l 10 --binding vim" />
+      <action name="Execute" command="fuzzel" />
     </keybind>
 
     <keybind key="W-S-r">
