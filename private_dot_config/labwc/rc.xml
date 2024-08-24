@@ -9,7 +9,7 @@
     <keepBorder>no</keepBorder>
   </theme>
 
-  <desktops number="2" popupTime="500" prefix="ws" />
+  <desktops number="3" popupTime="500" prefix="ws" />
 
   <keyboard>
     <default />
@@ -78,19 +78,27 @@
     </keybind>
 
     <keybind key="W-1">
-      <action name="GoToDesktop" to="left" wrap="no" />
+      <action name="GoToDesktop" to="1" wrap="no" />
     </keybind>
 
     <keybind key="W-2">
-      <action name="GoToDesktop" to="right" wrap="no" />
+      <action name="GoToDesktop" to="2" wrap="no" />
+    </keybind>
+
+    <keybind key="W-3">
+      <action name="GoToDesktop" to="3" wrap="no" />
     </keybind>
 
     <keybind key="W-S-1">
-      <action name="SendToDesktop" to="left" />
+      <action name="SendToDesktop" to="1" />
     </keybind>
 
     <keybind key="W-S-2">
-      <action name="SendToDesktop" to="right" />
+      <action name="SendToDesktop" to="2" />
+    </keybind>
+
+    <keybind key="W-S-3">
+      <action name="SendToDesktop" to="3" />
     </keybind>
 
     <keybind key="W-f">
