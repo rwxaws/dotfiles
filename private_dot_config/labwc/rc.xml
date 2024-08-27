@@ -3,9 +3,9 @@
 <labwc_config>
 
   <theme>
-    <name>Arc-Clone</name>
-    <cornerRadius>8</cornerRadius>
-    <font name="sans" size="10" />
+    <name>Matcha-dark-sea</name>
+    <cornerRadius>15</cornerRadius>
+    <font name="JetBrains Mono" size="12" />
     <keepBorder>no</keepBorder>
   </theme>
 

@@ -1,8 +1,7 @@
 return {
-  -- "loctvl842/monokai-pro.nvim",
-  "oahlen/iceberg.nvim",
+  "loctvl842/monokai-pro.nvim",
   priority = 1000,
   config = function()
-    vim.cmd([[ colorscheme iceberg ]])
+    vim.cmd([[ colorscheme monokai-pro-machine ]])
   end
 }
