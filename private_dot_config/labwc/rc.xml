@@ -69,12 +69,20 @@
       <action name="iconify" />
     </keybind>
 
-    <keybind key="W-l">
+    <keybind key="W-S-l">
       <action name="SnapToEdge" direction="right" />
     </keybind>
 
-    <keybind key="W-h">
+    <keybind key="W-S-h">
       <action name="SnapToEdge" direction="left" />
+    </keybind>
+
+    <keybind key="W-l">
+      <action name="GoToDesktop" to="right"/>
+    </keybind>
+
+    <keybind key="W-h">
+      <action name="GoToDesktop" to="left"/>
     </keybind>
 
     <keybind key="W-1">
