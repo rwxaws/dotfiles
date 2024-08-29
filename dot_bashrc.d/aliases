@@ -4,14 +4,12 @@ alias n="nnn"
 alias ncdu="ncdu --color dark-bg"
 alias q="qalc -c"
 
-# kitty
-alias s="kitten ssh"
-alias ss="kitten ssh aws-server"
-alias icat="kitten icat"
-
-# redshift
-alias r_on="redshift -O 2500"
-alias r_off="redshift -x"
+# ssh
+s="ssh"
+ss="ssh aws-server"
 
 # network
 alias g="ping 8.8.8.8"
+
+# chezmoi
+alias czedit="chezmoi edit --watch"

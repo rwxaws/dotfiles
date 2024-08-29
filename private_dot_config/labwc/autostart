@@ -1,2 +1,3 @@
+. ~/.profile
 kanshi &>/dev/null &
 foot --server &
