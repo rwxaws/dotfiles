@@ -13,7 +13,7 @@ local keymaps = {
 	{ mode = "n", lhs = "<leader>bd", rhs = "<cmd>bd<cr>", desc = "delete current buffer"},
 
 	-- copy & paste (to system clipboard)
-	{ mode = "n", lhs = "<leader>yy", rhs = "\"+y", desc = "yank"},
+	{ mode = {"n", "x"}, lhs = "<leader>yy", rhs = "\"+y", desc = "yank"},
 	{ mode = "n", lhs = "<leader>pp", rhs = "\"+p", desc = "paste"},
 
 	-- quicklist navigation
