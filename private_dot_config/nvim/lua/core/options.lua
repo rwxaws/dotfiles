@@ -28,9 +28,6 @@ opt.colorcolumn = '80'
 opt.laststatus = 3
 opt.cmdheight = 0
 
--- clipboard
-opt.clipboard:append("unnamedplus")
-
 -- backspace
 opt.backspace = "indent,eol,start"
 
