@@ -1,3 +1,5 @@
 . ~/.profile
 kanshi &>/dev/null &
+gammastep -PO 3000 &
 foot --server &
+thunar --daemon &

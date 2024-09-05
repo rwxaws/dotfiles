@@ -16,7 +16,7 @@
 
     <repeatRate>100</repeatRate>
     <repeatDelay>200</repeatDelay>
-    
+
     <keybind key="W-Return">
       <action name="Execute" command="footclient" />
     </keybind>
@@ -69,20 +69,12 @@
       <action name="iconify" />
     </keybind>
 
-    <keybind key="W-S-l">
+    <keybind key="W-l">
       <action name="SnapToEdge" direction="right" />
     </keybind>
 
-    <keybind key="W-S-h">
-      <action name="SnapToEdge" direction="left" />
-    </keybind>
-
-    <keybind key="W-l">
-      <action name="GoToDesktop" to="right"/>
-    </keybind>
-
     <keybind key="W-h">
-      <action name="GoToDesktop" to="left"/>
+      <action name="SnapToEdge" direction="left" />
     </keybind>
 
     <keybind key="W-1">
@@ -117,7 +109,7 @@
 
   <mouse>
     <default />
-        <context name="Frame">
+    <context name="Frame">
       <mousebind button="W-Left" action="Press">
         <action name="Focus" />
         <action name="Raise" />
