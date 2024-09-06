@@ -25,5 +25,6 @@ return {
     lspconfig.gopls.setup{ on_attach = lsp_keybindings }
     lspconfig.basedpyright.setup{ on_attach = lsp_keybindings }
     lspconfig.lua_ls.setup{ on_attach = lsp_keybindings }
+    lspconfig.bashls.setup{ on_attach = lsp_keybindings }
   end,
 }
