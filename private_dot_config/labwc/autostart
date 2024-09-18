@@ -1,4 +1,5 @@
-. ~/.profile
+. ~/.profile &
+/usr/libexec/xfce-polkit &
 kanshi &>/dev/null &
 gammastep -PO 3000 &
 foot --server &
