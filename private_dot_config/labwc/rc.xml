@@ -21,6 +21,10 @@
       <action name="Execute" command="footclient" />
     </keybind>
 
+    <keybind key="W-S-Return">
+      <action name="Execute" command="footclient -t xterm-256color" />
+    </keybind>
+
     <keybind key="W-q">
       <action name="Close" />
     </keybind>
