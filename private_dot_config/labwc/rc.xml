@@ -29,6 +29,10 @@
       <action name="Close" />
     </keybind>
 
+    <keybind key="W-S-q">
+      <action name="Kill" />
+    </keybind>
+
     <keybind key="W-p">
       <action name="Execute" command="thunar" />
     </keybind>
