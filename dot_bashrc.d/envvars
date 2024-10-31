@@ -1,0 +1,3 @@
+export NNN_BMS="b:~/Downloads;v:~/Videos/;d:~/Documents;p:~/Pictures;.:~/dotfiles;r:/mnt"
+export EDITOR="nvim"
+export PATH="$PATH:$HOME/.local/bin"
