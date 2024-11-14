@@ -1,0 +1,14 @@
+function snippet() {
+  local notes_dir="$HOME/repos"
+  local file
+  file=$(rg --no-heading --color=always "$1" $notes_dir \
+    | fzf --ansi --preview 'echo {} | cut -d: -f1 | xargs bat --style=numbers --color=always -n' \
+    | cut -d: -f1 \
+    | head -n1)
+
+  if [ -n "$file" ]; then
+    "$EDITOR" "$(realpath $file)"
+  else
+    echo "No file selected."
+  fi
+}
