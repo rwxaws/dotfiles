@@ -13,6 +13,7 @@ return {
 
     telescope.setup{
       defaults = {
+        theme = "ivy",
         layout_strategy = 'horizontal',
         layout_config = {
           horizontal = {
@@ -21,8 +22,13 @@ return {
             preview_cutoff = 50
           }
         }
+      },
+      extensions = {
+        fzf = {}
       }
     }
+
+    require("config.telescope.utils").setup()
   end,
 }
 
