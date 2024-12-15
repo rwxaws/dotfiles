@@ -6,9 +6,12 @@ function snippet() {
     | cut -d: -f1 \
     | head -n1)
 
-  if [ -n "$file" ]; then
-    "$EDITOR" "$(realpath $file)"
-  else
-    echo "No file selected."
-  fi
+  [ -n "$file" ] && glow -p "$(realpath $file)"
+}
+
+vids() {
+  local file
+  file=$(find "$HOME/Videos" -type f \
+  | fzf --height 40% --reverse --border)
+  [ -n "$file" ] && mpv "$file"
 }

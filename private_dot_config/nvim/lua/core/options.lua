@@ -37,3 +37,8 @@ opt.splitbelow = true
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- fold options
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 99

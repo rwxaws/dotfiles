@@ -1,6 +1,6 @@
 . ~/.profile &
 /usr/libexec/xfce-polkit &
 kanshi &>/dev/null &
-gammastep -PO 3000 &
+gammastep -PO 2500 &
 foot --server &
 thunar --daemon &

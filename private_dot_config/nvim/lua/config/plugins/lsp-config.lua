@@ -19,7 +19,6 @@ return {
       vim.keymap.set("n", "<leader>dk", vim.diagnostic.goto_prev, {buffer = 0})
 
       vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, {buffer = 0})
-      vim.keymap.set("n", "<leader>gr", builtin.lsp_references, {buffer = 0})
     end
 
     lspconfig.gopls.setup{ on_attach = lsp_keybindings }

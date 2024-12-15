@@ -12,9 +12,8 @@ local function search_dotfiles()
 end
 
 local opts = {sorting_strategy = "ascending"}
-keymap.set('n', '<leader>ff', builtin.find_files, {desc="find files in current directory"})
-keymap.set('n', '<leader>fb', builtin.buffers, {desc="fuzzy search buffers"})
+keymap.set('n', '<leader>FF', builtin.find_files, {desc="find files in current directory"})
+keymap.set('n', '<leader>ff', builtin.buffers, {desc="fuzzy search buffers"})
 keymap.set('n', '<C-/>', function() builtin.current_buffer_fuzzy_find(themes.get_ivy(opts)) end)
 
 keymap.set('n', '<leader>fc', search_dotfiles, {desc="search dotfiles"})
-

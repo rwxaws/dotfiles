@@ -37,12 +37,22 @@
       <action name="Execute" command="thunar" />
     </keybind>
 
+    <keybind key="Print">
+      <action name="Execute">
+        <command>sh -c 'grim -g "$(slurp)"'</command>
+      </action>
+    </keybind>
+
     <keybind key="W-[">
-      <action name="Execute" command="gammastep -PO 3000" />
+      <action name="Execute">
+        <command>sh -c 'pkill gammastep ; gammastep -PO 1500'</command>
+      </action>
     </keybind>
 
     <keybind key="W-]">
-      <action name="Execute" command="pkill gammastep" />
+      <action name="Execute">
+        <command>sh -c 'pkill gammastep ; gammastep -PO 2500'</command>
+      </action>
     </keybind>
 
     <keybind key="W-up">
