@@ -13,7 +13,6 @@ return {
 
     telescope.setup{
       defaults = {
-        theme = "ivy",
         layout_strategy = 'horizontal',
         layout_config = {
           horizontal = {
@@ -23,12 +22,18 @@ return {
           }
         }
       },
+
+      pickers = {
+        find_files = { theme = 'ivy' },
+        current_buffer_fuzzy_find = { theme = 'ivy' }
+      },
+
       extensions = {
         fzf = {}
       }
     }
 
-    require("config.telescope.utils").setup()
+    require 'config.plugins.telescope.utils'.setup()
   end,
 }
 
