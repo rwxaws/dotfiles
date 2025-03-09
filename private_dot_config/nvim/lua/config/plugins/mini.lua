@@ -2,25 +2,21 @@ return {
   "echasnovski/mini.nvim",
   version = false,
   config = function()
-    require("mini.comment").setup{}
-    require("mini.pairs").setup{}
-    require("mini.surround").setup{}
-    require("mini.ai").setup{}
-    require("mini.bracketed").setup{}
-    require("mini.completion").setup{}
+    -- set theme
+    vim.cmd([[ colorscheme minicyan ]])
 
-    local hipatterns = require('mini.hipatterns')
-    hipatterns.setup{
-      highlighters = {
-        -- Highlight standalone 'FIXME', 'HACK', 'TODO', 'NOTE'
-        fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
-        hack  = { pattern = '%f[%w]()HACK()%f[%W]',  group = 'MiniHipatternsHack'  },
-        todo  = { pattern = '%f[%w]()TODO()%f[%W]',  group = 'MiniHipatternsTodo'  },
-        note  = { pattern = '%f[%w]()NOTE()%f[%W]',  group = 'MiniHipatternsNote'  },
+    require("config/plugins/mini_plugins/mini_basics")
+    require("config/plugins/mini_plugins/mini_comment")
 
-        -- Highlight hex color strings (`#rrggbb`) using that color
-        hex_color = hipatterns.gen_highlighter.hex_color(),
-      },
-    }
+    require("config/plugins/mini_plugins/mini_pairs")
+    require("config/plugins/mini_plugins/mini_surround")
+    require("config/plugins/mini_plugins/mini_ai")
+    require("config/plugins/mini_plugins/mini_bracketed")
+    require("config/plugins/mini_plugins/mini_completion")
+    require("config/plugins/mini_plugins/mini_clue")
+    require("config/plugins/mini_plugins/mini_hipatterns")
+    require("config/plugins/mini_plugins/mini_pick")
+    require("config/plugins/mini_plugins/mini_extras")
+
   end
 }

@@ -44,9 +44,7 @@
     </keybind>
 
     <keybind key="W-[">
-      <action name="Execute">
-        <command>sh -c 'pkill gammastep ; gammastep -PO 1500'</command>
-      </action>
+      <action name="Execute" command="pkill gammastep" />
     </keybind>
 
     <keybind key="W-]">

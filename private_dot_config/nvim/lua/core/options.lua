@@ -42,3 +42,11 @@ opt.swapfile = false
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldlevel = 99
+
+-- auto reading (useful for when a file is changed outside of vim using something like aider)
+vim.opt.autoread = true
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
+  callback = function()
+    vim.cmd("checktime")
+  end,
+})
