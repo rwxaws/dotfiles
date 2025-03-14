@@ -1,4 +1,6 @@
 return {
   "zbirenbaum/copilot.lua",
-  opts = {}
+  opts = {},
+  cmd = "Copilot",
+  event = "InsertEnter"
 }

@@ -17,6 +17,8 @@ return {
     require("config/plugins/mini_plugins/mini_hipatterns")
     require("config/plugins/mini_plugins/mini_pick")
     require("config/plugins/mini_plugins/mini_extras")
+    require("config/plugins/mini_plugins/mini_notify")
+    require("config/plugins/mini_plugins/mini_files")
 
   end
 }
