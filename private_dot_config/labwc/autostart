@@ -4,3 +4,4 @@ kanshi &>/dev/null &
 gammastep -PO 2500 &
 foot --server &
 thunar --daemon &
+mako &
