@@ -1,0 +1,5 @@
+#!/bin/bash
+
+choice=$(echo -e "Quiet\nBalanced\nPerformance" | fuzzel --dmenu)
+
+asusctl profile -P $choice
