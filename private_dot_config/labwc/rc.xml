@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 
 <labwc_config>
+  <windowRules>
+    <windowRule identifier="*" serverDecoration="no" />
+  </windowRules>
 
   <theme>
     <name>Matcha-dark-sea</name>
@@ -89,12 +92,28 @@
       <action name="iconify" />
     </keybind>
 
-    <keybind key="W-l">
-      <action name="SnapToEdge" direction="right" />
+    <keybind key="W-h">
+      <action name="GoToDesktop" to="left" />
     </keybind>
 
-    <keybind key="W-h">
+    <keybind key="W-l">
+      <action name="GoToDesktop" to="right" />
+    </keybind>
+
+    <keybind key="W-S-h">
+      <action name="MoveToOutput" direction="left" wrap="no" />
+    </keybind>
+
+    <keybind key="W-S-l">
+      <action name="MoveToOutput" direction="right" wrap="no" />
+    </keybind>
+
+    <keybind key="W-A-h">
       <action name="SnapToEdge" direction="left" />
+    </keybind>
+
+    <keybind key="W-A-l">
+      <action name="SnapToEdge" direction="right" />
     </keybind>
 
     <keybind key="W-1">

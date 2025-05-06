@@ -1,6 +1,16 @@
-default-timeout=5000
-font=Jetbrain Mono 13
+font=Jetbrain Mono 15
 
 background-color=#252C2D
 border-color=#2EB398
+width=350
+height=110
+margin=15
+padding=0,15,25
 border-size=1
+border-radius=12
+
+icons=1
+max-icon-size=64
+
+output=eDP-2
+default-timeout=10000
