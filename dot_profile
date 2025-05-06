@@ -4,4 +4,5 @@ BLK="04" CHR="04" DIR="05" EXE="02" REG="00" HARDLINK="02" SYMLINK="05" MISSING=
 export NNN_BMS="b:~/Downloads;v:~/Videos/;d:~/Documents;p:~/Pictures;r:/mnt"
 export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 
+export MANPAGER="nvim +Man!"
 export PATH="$PATH:$HOME/go/bin:$HOME/.local/bin:$HOME/.scripts"

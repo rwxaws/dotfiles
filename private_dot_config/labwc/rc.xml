@@ -144,6 +144,10 @@
       <action name="ToggleFullscreen" />
     </keybind>
 
+    <keybind key="W-b">
+      <action name="ToggleDecorations" />
+    </keybind>
+
   </keyboard>
 
   <mouse>
