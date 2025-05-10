@@ -5,3 +5,4 @@ gammastep -PO 2500 &
 foot --server &
 thunar --daemon &
 mako &
+swaybg -i $HOME/Pictures/wallpapers/wallpaper/wallpaper -m fill >/dev/null 2>&1 &

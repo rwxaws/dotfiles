@@ -1,12 +1,12 @@
-font=Jetbrain Mono 15
+font=Jetbrain Mono 12
 
 background-color=#252C2D
 border-color=#2EB398
-width=350
-height=110
-margin=15
-padding=0,15,25
-border-size=1
+width=400
+height=250
+margin=10
+padding=10,10,15
+border-size=2
 border-radius=12
 
 icons=1
